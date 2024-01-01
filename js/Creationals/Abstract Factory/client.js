@@ -1,5 +1,6 @@
 import { EnchantedMazeFactory } from './EnchantedMaze.js';
 import { Direction } from './Direction.js';
+import { BombedMazeFactory } from './BombedMaze.js';
 
 function createMaze(factory) {
     let aMaze = factory.makeMaze();
@@ -28,3 +29,8 @@ const enchantedMazeFactory = new EnchantedMazeFactory();
 const myEnchantedMaze = createMaze(enchantedMazeFactory);
 
 console.log(myEnchantedMaze);
+
+const bombedMazeFactory = new BombedMazeFactory();
+const myBombedMaze = createMaze(bombedMazeFactory);
+
+console.log(myBombedMaze);
