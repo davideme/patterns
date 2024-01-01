@@ -1,5 +1,5 @@
 import { EnchantedMazeFactory } from './EnchantedMaze.js';
-import { Direction } from './MazeComponents.js';
+import { Direction } from './Direction.js';
 
 function createMaze(factory) {
     let aMaze = factory.makeMaze();

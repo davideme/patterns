@@ -1,5 +1,8 @@
 import { MazeFactory } from './MazeFactory.js';
-import { Room, Door, Wall, Maze } from './MazeComponents.js';
+import { Door } from './Door.js';
+import { Room } from './Room.js';
+import { Wall } from './Wall.js';
+import { Maze } from "./Maze.js";
 
 export class EnchantedMazeFactory extends MazeFactory {
     makeMaze() {
