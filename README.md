@@ -10,7 +10,6 @@
 | C++               | X                                 | X                      |                      |
 | PHP               | X                                 | X                      |                      |
 | C                 |                                   |                        |                      |
-| Shell             |                                   |                        |                      |
 | Go                | X                                 | X                      | X                    |
 
 # Popular declarative programming languages
@@ -18,3 +17,18 @@
  - HTML
  - CSS
  - SQL
+
+
+# Typing discipline
+
+| Language/Typing | Static/Dynamic | Strong/Weak | Duck/Nominative/Structural | Manifest/inferred  |
+|-----------------|----------------|-------------|----------------------------|--------------------|
+| JavaScript      | Dynamic        | Weak        | Duck                       |                    |
+| Python          | Dynamic        | Strong      | Duck                       |                    |
+| TypeScript      | Static         | Strong      | Duck and Structural        |                    |
+| Java            | Static         | Strong      | Nominative                 | Manifest           |
+| C#              | Static         | Strong      | Nominative                 | partially inferred |
+| C++             | Static         | Strong      | Nominative                 | partially inferred |
+| PHP             | Dynamic        | Weak        | Nominative                 |                    |
+| C               | Static         | Weak        | Nominative                 | Manifest           |
+| Go              | Static         | Strong      | Nominative and Structural  | Inferred           |
