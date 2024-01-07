@@ -1,4 +1,5 @@
-function add(a: number): (number) => number {
+(() => {
+    function add(a: number): (number) => number {
     return function(b: number): number {
         return a + b;
     };
@@ -6,3 +7,4 @@ function add(a: number): (number) => number {
 
 const addFive = add(5);
 console.log(addFive(3));  // 8
+})()
