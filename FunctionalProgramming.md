@@ -32,13 +32,16 @@ None of these languages support Pure functions
 
 
 ## Type systems
-| Language/Paradigm | Product types | sum types                      | Pattern Matching                  |
-| ----------------- | ------------- | ------------------------------ | --------------------------------- |
-| JavaScript        |               | ❌                             | ❌                                |
-| Python            |               | ✅since 3.5 with typing.Union  | ✅since 3.10 with match statement |
-| Typescript        |               | ✅discriminated unions         | switch-case with shared field.                       |
-| Java              |               | Simulated via Sealed Interface | since Java 21                     |
-| C#                |               | Simulated via Sealed Class     | since C# 9.0                      |
-| C++               |               | since C++17 with std::variant  | since C++17 with std::visit       |
-| PHP               |               | ❌                             | ❌                                |
-| Go                |               | ❌                             | ❌                                |
+
+They all support Product Types via Class, Record or Struct.
+
+| Language/Paradigm | Sum types                      | Pattern Matching                  | Dependent types              |
+| ----------------- | ------------------------------ | --------------------------------- | ---------------------------- |
+| JavaScript        | ❌                             | ❌                                | ❌                           |
+| Python            | ✅since 3.5 with typing.Union  | ✅since 3.10 with match statement | ❌                           |
+| Typescript        | ✅discriminated unions         | switch-case with shared field.    | some type-level computations |
+| Java              | Simulated via Sealed Interface | since Java 21                     | ❌                           |
+| C#                | Simulated via Sealed Class     | since C# 9.0                      | some type-level computations |
+| C++               | since C++17 with std::variant  | since C++17 with std::visit       | some type-level computations |
+| PHP               | ❌                             | ❌                                | ❌                           |
+| Go                | ❌                             | ❌                                | ❌                           |
