@@ -1,34 +1,39 @@
-# Popular imperative programming languages
+# Popular Imperative Programming Languages
+
+## Paradigm
 
 | Language/Paradigm | Object-oriented programming (OOP) | Functional programming | Concurrent computing |
-|-------------------|-----------------------------------|------------------------|----------------------|
-| JavaScript        | X                                 | X                      |                      |
-| Python            | X                                 | X                      |                      |
-| Typescript        | X                                 | X                      |                      |
-| Java              | X                                 | X                      | X                    |
-| C#                | X                                 | X                      | X                    |
-| C++               | X                                 | X                      |                      |
-| PHP               | X                                 | X                      |                      |
-| C                 |                                   |                        |                      |
-| Go                | X                                 | X                      | X                    |
-
-# Popular declarative programming languages
-
- - HTML
- - CSS
- - SQL
+| ----------------- | --------------------------------- | ---------------------- | -------------------- |
+| JavaScript        | Yes                               | Yes                    | Partial[^1]          |
+| Python            | Yes                               | Yes                    | Yes                  |
+| TypeScript        | Yes                               | Yes                    | Partial[^1]          |
+| Java              | Yes                               | Yes                    | Yes                  |
+| C#                | Yes                               | Yes                    | Yes                  |
+| C++               | Yes                               | Yes                    | Yes                  |
+| PHP               | Yes                               | Yes                    | Partial[^1]          |
+| C                 | No                                | No                     | Partial[^1]          |
+| Go                | Yes                               | Yes                    | Yes                  |
 
 
-# Typing discipline
+## Typing Discipline
 
-| Language/Typing | Static/Dynamic | Strong/Weak | Duck/Nominative/Structural | Manifest/inferred  |
-|-----------------|----------------|-------------|----------------------------|--------------------|
-| JavaScript      | Dynamic        | Weak        | Duck                       |                    |
-| Python          | Dynamic        | Strong      | Duck                       |                    |
-| TypeScript      | Static         | Strong      | Duck and Structural        |                    |
-| Java            | Static         | Strong      | Nominative                 | Manifest           |
-| C#              | Static         | Strong      | Nominative                 | partially inferred |
-| C++             | Static         | Strong      | Nominative                 | partially inferred |
-| PHP             | Dynamic        | Weak        | Nominative                 |                    |
-| C               | Static         | Weak        | Nominative                 | Manifest           |
-| Go              | Static         | Strong      | Nominative and Structural  | Inferred           |
+| Language/Typing | Static/Dynamic | Strong/Weak | Duck/Nominative/Structural | Manifest/Inferred     |
+| --------------- | -------------- | ----------- | -------------------------- | --------------------- |
+| JavaScript      | Dynamic        | Weak        | Duck                       | Inferred              |
+| Python          | Dynamic        | Strong      | Duck                       | Inferred              |
+| TypeScript      | Static         | Strong      | Duck and Structural        | Manifest and Inferred |
+| Java            | Static         | Strong      | Nominative                 | Manifest              |
+| C#              | Static         | Strong      | Nominative                 | Partially Inferred    |
+| C++             | Static         | Strong      | Nominative                 | Partially Inferred    |
+| PHP             | Dynamic        | Weak        | Nominative                 | Inferred              |
+| C               | Static         | Weak        | Nominative                 | Manifest              |
+| Go              | Static         | Strong      | Nominative and Structural  | Inferred              |
+
+
+# Popular Declarative Programming Languages
+
+- HTML
+- CSS
+- SQL
+
+[^1]: Note that while some languages support concurrency, it may not be a core paradigm.
