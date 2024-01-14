@@ -1,10 +1,7 @@
-import { MazeFactory } from './MazeFactory.js'
-import { Door } from './Door.js'
-import { Room } from './Room.js'
-import { Wall } from './Wall.js'
+import { RoomMixin } from './Room.js'
 import { Maze } from './Maze.js'
 
-export class EnchantedMazeFactory extends MazeFactory {
+export class EnchantedMazeFactory {
   makeMaze () {
     return new Maze()
   }
@@ -28,17 +25,18 @@ export class EnchantedMazeFactory extends MazeFactory {
   }
 }
 
-class EnchantedRoom extends Room {
+class EnchantedRoom {
   constructor (roomNo, spell) {
-    super(roomNo)
+    this.roomNo = roomNo
     this.spell = spell
+    Object.assign(this, RoomMixin)
     // Additional enchanted room-specific implementation
   }
 }
 
-class EnchantedDoor extends Door {
+class EnchantedDoor {
 }
 
-class EnchantedWall extends Wall {
+class EnchantedWall {
   // Additional enchanted wall-specific implementation
 }

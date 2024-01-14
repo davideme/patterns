@@ -1,6 +1,6 @@
 export class Maze {
   constructor () {
-    this.rooms = {}
+    this.rooms = []
   }
 
   addRoom (room) {
