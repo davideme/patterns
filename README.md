@@ -62,6 +62,6 @@ Declarative programming is a paradigm that expresses the logic of a computation 
 
 Footnotes and References:
 
-[^popular1]: https://survey.stackoverflow.co/2023/#most-popular-technologies-language-prof
-[^popular2]: https://github.blog/2023-11-08-the-state-of-open-source-and-ai/#the-most-popular-programming-languages 
-[^popular3]: https://www.tiobe.com/tiobe-index/
+[^popular1]: [Stack Overflow 2023 Developer Survey: Most popular technologies by Professional Developers](https://survey.stackoverflow.co/2023/#most-popular-technologies-language-prof)
+[^popular2]: [Github The state of the Octoverse 2023: The most popular programming languages](https://github.blog/2023-11-08-the-state-of-open-source-and-ai/#the-most-popular-programming-languages)
+[^popular3]: [TIOBE Index](https://www.tiobe.com/tiobe-index/)
