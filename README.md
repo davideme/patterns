@@ -1,39 +1,49 @@
 # Popular Imperative Programming Languages
 
+Imperative programming is a programming paradigm that uses statements to change a program's state. This section categorizes popular[^popular1][^popular2][^popular3] imperative programming languages based on their support for Object-oriented programming (OOP), Functional programming, and Concurrent computing.
+
 ## Paradigm
 
 | Language/Paradigm | Object-oriented programming (OOP) | Functional programming | Concurrent computing |
 | ----------------- | --------------------------------- | ---------------------- | -------------------- |
-| JavaScript        | Yes                               | Yes                    | Partial[^1]          |
-| Python            | Yes                               | Yes                    | Yes                  |
-| TypeScript        | Yes                               | Yes                    | Partial[^1]          |
-| Java              | Yes                               | Yes                    | Yes                  |
-| C#                | Yes                               | Yes                    | Yes                  |
-| C++               | Yes                               | Yes                    | Yes                  |
-| PHP               | Yes                               | Yes                    | Partial[^1]          |
-| C                 | No                                | No                     | Partial[^1]          |
-| Go                | Yes                               | Yes                    | Yes                  |
-
+| JavaScript        | Yes [^1]                          | Yes [^2]               | Partial [^3]         |
+| Python            | Yes [^4]                          | Yes [^5]               | Yes [^6]             |
+| TypeScript        | Yes [^7]                          | Yes [^8]               | Partial [^3]         |
+| Java              | Yes [^9]                          | Yes [^10]              | Yes [^11]            |
+| C#                | Yes [^12]                         | Yes [^13]              | Yes [^14]            |
+| C++               | Yes [^15]                         | Yes [^16]              | Yes [^17]            |
+| PHP               | Yes [^18]                         | Yes [^19]              | Partial [^3]         |
+| C                 | No [^20]                          | No [^21]               | Partial [^3]         |
+| Go                | Yes [^22]                         | Yes [^23]              | Yes [^24]            |
 
 ## Typing Discipline
 
-| Language/Typing | Static/Dynamic | Strong/Weak | Duck/Nominative/Structural | Manifest/Inferred     |
-| --------------- | -------------- | ----------- | -------------------------- | --------------------- |
-| JavaScript      | Dynamic        | Weak        | Duck                       | Inferred              |
-| Python          | Dynamic        | Strong      | Duck                       | Inferred              |
-| TypeScript      | Static         | Strong      | Duck and Structural        | Manifest and Inferred |
-| Java            | Static         | Strong      | Nominative                 | Manifest              |
-| C#              | Static         | Strong      | Nominative                 | Partially Inferred    |
-| C++             | Static         | Strong      | Nominative                 | Partially Inferred    |
-| PHP             | Dynamic        | Weak        | Nominative                 | Inferred              |
-| C               | Static         | Weak        | Nominative                 | Manifest              |
-| Go              | Static         | Strong      | Nominative and Structural  | Inferred              |
+The typing discipline of a programming language pertains to the rules used by a compiler to associate a type with a value. The following table compares the typing disciplines of various imperative programming languages, based on technical documentation and scholarly articles.
 
+| Language/Typing | Static/Dynamic | Strong/Weak  | Duck/Nominative/Structural      | Manifest/Inferred           |
+| --------------- | -------------- | ------------ | ------------------------------- | --------------------------- |
+| JavaScript      | Dynamic [^25]  | Weak [^26]   | Duck [^27]                      | Inferred [^28]              |
+| Python          | Dynamic [^29]  | Strong [^30] | Duck [^31]                      | Inferred [^32]              |
+| TypeScript      | Static [^33]   | Strong [^34] | Duck and Structural [^35]       | Manifest and Inferred [^36] |
+| Java            | Static [^37]   | Strong [^38] | Nominative [^39]                | Manifest [^40]              |
+| C#              | Static [^41]   | Strong [^42] | Nominative [^43]                | Partially Inferred [^44]    |
+| C++             | Static [^45]   | Strong [^46] | Nominative [^47]                | Partially Inferred [^48]    |
+| PHP             | Dynamic [^49]  | Weak [^50]   | Nominative [^51]                | Inferred [^52]              |
+| C               | Static [^53]   | Weak [^54]   | Nominative [^55]                | Manifest [^56]              |
+| Go              | Static [^57]   | Strong [^58] | Nominative and Structural [^59] | Inferred [^60]              |
 
 # Popular Declarative Programming Languages
 
-- HTML
-- CSS
-- SQL
+Declarative programming is a paradigm that expresses the logic of a computation without describing its control flow. Common examples of declarative programming languages include HTML, CSS, and SQL, as noted in various technical references.
 
-[^1]: Note that while some languages support concurrency, it may not be a core paradigm.
+- HTML [^61]
+- CSS [^62]
+- SQL [^63]
+
+---
+
+Footnotes and References:
+
+[^popular1]: https://survey.stackoverflow.co/2023/#most-popular-technologies-language-prof
+[^popular2]: https://github.blog/2023-11-08-the-state-of-open-source-and-ai/#the-most-popular-programming-languages 
+[^popular3]: https://www.tiobe.com/tiobe-index/
