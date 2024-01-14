@@ -32,6 +32,24 @@ The typing discipline of a programming language pertains to the rules used by a 
 | C               | Static [^53]   | Weak [^54]   | Nominative [^55]                | Manifest [^56]              |
 | Go              | Static [^57]   | Strong [^58] | Nominative and Structural [^59] | Inferred [^60]              |
 
+## Features
+
+| Language   | Non-nullable Types | Error Handling | Collection Manipulation | Resources Releasing | Composition with delegation                         |
+| ---------- | ------------------ | -------------- | ----------------------- | ------------------- | --------------------------------------------------- |
+| JavaScript | No                 | Exception      | Yes                     | N/A                 | mixins and traits                                   |
+| Python     | No                 | Exception      | Yes                     | No                  | mixins                                              |
+| TypeScript | Yes                | Exception      | Yes                     | N/A                 | mixins                                              |
+| Java       | Yes*               | Exception      | Yes                     | Yes                 | interfaces default methods[^java-interface-default] |
+| C#         | Yes                | Exception      | Yes                     | Yes                 | default interface methods[^C#-interface-default]    |
+| C++        | No                 | Exception      | Yes                     | Yes                 | mixins using template                               |
+| PHP        | No                 | Exception      | No                      | No                  | traits                                              |
+| C          | N/A                | No             | Yes                     | Yes                 | No                                                  |
+| Go         | No                 | Error          | Yes                     | Yes                 | Embedding                                           |
+
+[^java-interface-default]: https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html
+[^C#-interface-default]: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-8.0/default-interface-methods
+
+
 # Popular Declarative Programming Languages
 
 Declarative programming is a paradigm that expresses the logic of a computation without describing its control flow. Common examples of declarative programming languages include HTML, CSS, and SQL, as noted in various technical references.
