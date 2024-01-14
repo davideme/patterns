@@ -6,7 +6,7 @@ Imperative programming is a programming paradigm that uses statements to change 
 
 | Language/Paradigm | Object-oriented programming (OOP) | Functional programming | Concurrent computing |
 | ----------------- | --------------------------------- | ---------------------- | -------------------- |
-| JavaScript        | Yes [^1]                          | Yes [^2]               | Partial [^3]         |
+| JavaScript        | Yes [^ecma-overview]              | Yes [^2]               | Partial [^3]         |
 | Python            | Yes [^4]                          | Yes [^5]               | Yes [^6]             |
 | TypeScript        | Yes [^7]                          | Yes [^8]               | Partial [^3]         |
 | Java              | Yes [^9]                          | Yes [^10]              | Yes [^11]            |
@@ -15,6 +15,8 @@ Imperative programming is a programming paradigm that uses statements to change 
 | PHP               | Yes [^18]                         | Yes [^19]              | Partial [^3]         |
 | C                 | No [^20]                          | No [^21]               | Partial [^3]         |
 | Go                | Yes [^22]                         | Yes [^23]              | Yes [^24]            |
+
+[^ecma-overview]: [ECMAScript® 2023 Language Specification: Overview](https://262.ecma-international.org/14.0/#sec-overview)
 
 ## Typing Discipline
 
