@@ -4,17 +4,17 @@ Imperative programming is a programming paradigm that uses statements to change 
 
 ## Paradigm
 
-| Language/Paradigm | Object-oriented programming (OOP) | Functional programming | Concurrent computing |
-| ----------------- | --------------------------------- | ---------------------- | -------------------- |
-| JavaScript        | Yes [^ecma-overview]              | Yes [^2]               | Partial [^3]         |
-| Python            | Yes [^4]                          | Yes [^5]               | Yes [^6]             |
-| TypeScript        | Yes [^7]                          | Yes [^8]               | Partial [^3]         |
-| Java              | Yes [^9]                          | Yes [^10]              | Yes [^11]            |
-| C#                | Yes [^12]                         | Yes [^13]              | Yes [^14]            |
-| C++               | Yes [^15]                         | Yes [^16]              | Yes [^17]            |
-| PHP               | Yes [^18]                         | Yes [^19]              | Partial [^3]         |
-| C                 | No [^20]                          | No [^21]               | Partial [^3]         |
-| Go                | Yes [^22]                         | Yes [^23]              | Yes [^24]            |
+| Language/Paradigm        | [Object-oriented programming][oop] | [Functional programming][functional] | Concurrent computing |
+| ------------------------ | ---------------------------------- | ------------------------------------ | -------------------- |
+| [JavaScript][javascript] | Yes [^ecma-overview]               | Yes [^2]                             | Partial [^3]         |
+| Python                   | Yes [^4]                           | Yes [^5]                             | Yes [^6]             |
+| TypeScript               | Yes [^7]                           | Yes [^8]                             | Partial [^3]         |
+| Java                     | Yes [^9]                           | Yes [^10]                            | Yes [^11]            |
+| C#                       | Yes [^12]                          | Yes [^13]                            | Yes [^14]            |
+| C++                      | Yes [^15]                          | Yes [^16]                            | Yes [^17]            |
+| PHP                      | Yes [^18]                          | Yes [^19]                            | Partial [^3]         |
+| C                        | No [^20]                           | No [^21]                             | Partial [^3]         |
+| Go                       | Yes [^22]                          | Yes [^23]                            | Yes [^24]            |
 
 [^ecma-overview]: [ECMAScript® 2023 Language Specification: Overview](https://262.ecma-international.org/14.0/#sec-overview)
 
@@ -67,3 +67,8 @@ Footnotes and References:
 [^popular1]: [Stack Overflow 2023 Developer Survey: Most popular technologies by Professional Developers](https://survey.stackoverflow.co/2023/#most-popular-technologies-language-prof)
 [^popular2]: [Github The state of the Octoverse 2023: The most popular programming languages](https://github.blog/2023-11-08-the-state-of-open-source-and-ai/#the-most-popular-programming-languages)
 [^popular3]: [TIOBE Index](https://www.tiobe.com/tiobe-index/)
+
+[javascript]: ./javascript/README.md
+
+[oop]: ./ObjectOriented.md
+[functional]: ./FunctionalProgramming.md
