@@ -1,60 +1,60 @@
 // Higher-order function as Command
-type Command = () => void;
+type Command = () => void
 
 // Concrete Commands
 const simpleCommand = (payload: string): Command => {
-    return () => {
-        console.log(`Simple Command: See, I can do simple things like printing (${payload})`);
-    };
-};
+  return () => {
+    console.log(`Simple Command: See, I can do simple things like printing (${payload})`)
+  }
+}
 
 const complexCommand = (receiver: Receiver, a: string, b: string): Command => {
-    return () => {
-        console.log('Complex Command: Complex stuff should be done by a receiver object.');
-        receiver.doSomething(a);
-        receiver.doSomethingElse(b);
-    };
-};
+  return () => {
+    console.log('Complex Command: Complex stuff should be done by a receiver object.')
+    receiver.doSomething(a)
+    receiver.doSomethingElse(b)
+  }
+}
 
 // Receiver
 class Receiver {
-    doSomething(a: string): void {
-        console.log(`Receiver: Working on (${a}.)`);
-    }
+  doSomething (a: string): void {
+    console.log(`Receiver: Working on (${a}.)`)
+  }
 
-    doSomethingElse(b: string): void {
-        console.log(`Receiver: Also working on (${b}.)`);
-    }
+  doSomethingElse (b: string): void {
+    console.log(`Receiver: Also working on (${b}.)`)
+  }
 }
 
 // Invoker
 class Invoker {
-    private onStart: Command | undefined;
-    private onFinish: Command | undefined;
+  private onStart: Command | undefined
+  private onFinish: Command | undefined
 
-    setOnStart(command: Command): void {
-        this.onStart = command;
-    }
+  setOnStart (command: Command): void {
+    this.onStart = command
+  }
 
-    setOnFinish(command: Command): void {
-        this.onFinish = command;
-    }
+  setOnFinish (command: Command): void {
+    this.onFinish = command
+  }
 
-    doSomethingImportant(): void {
-        console.log('Invoker: Does anybody want something done before I begin?');
-        this.onStart?.();
+  doSomethingImportant (): void {
+    console.log('Invoker: Does anybody want something done before I begin?')
+    this.onStart?.()
 
-        console.log('Invoker: ...doing something really important...');
+    console.log('Invoker: ...doing something really important...')
 
-        console.log('Invoker: Does anybody want something done after I finish?');
-        this.onFinish?.();
-    }
+    console.log('Invoker: Does anybody want something done after I finish?')
+    this.onFinish?.()
+  }
 }
 
 // Client code
-const invoker = new Invoker();
-const receiver = new Receiver();
-invoker.setOnStart(simpleCommand('Say Hi!'));
-invoker.setOnFinish(complexCommand(receiver, 'Send email', 'Save report'));
+const invoker = new Invoker()
+const receiver = new Receiver()
+invoker.setOnStart(simpleCommand('Say Hi!'))
+invoker.setOnFinish(complexCommand(receiver, 'Send email', 'Save report'))
 
-invoker.doSomethingImportant();
+invoker.doSomethingImportant()
