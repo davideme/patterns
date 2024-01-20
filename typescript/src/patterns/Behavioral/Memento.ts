@@ -1,78 +1,78 @@
 // Memento
 class Memento {
-    private state: string;
+  private readonly state: string
 
-    constructor(state: string) {
-        this.state = state;
-    }
+  constructor (state: string) {
+    this.state = state
+  }
 
-    getState(): string {
-        return this.state;
-    }
+  getState (): string {
+    return this.state
+  }
 }
 
 // Originator
 class Originator {
-    private state: string;
+  private state: string
 
-    constructor(state: string) {
-        this.state = state
-    }
+  constructor (state: string) {
+    this.state = state
+  }
 
-    setState(state: string) {
-        console.log(`Originator: Setting state to ${state}`);
-        this.state = state;
-    }
+  setState (state: string): void {
+    console.log(`Originator: Setting state to ${state}`)
+    this.state = state
+  }
 
-    save(): Memento {
-        return new Memento(this.state);
-    }
+  save (): Memento {
+    return new Memento(this.state)
+  }
 
-    restore(memento: Memento | undefined) {
-        if (memento) {
-            this.state = memento.getState();
-            console.log(`Originator: State after restoring from Memento: ${this.state}`);
-        }
-    }
+  restore (memento: Memento): void {
+    this.state = memento.getState()
+    console.log(`Originator: State after restoring from Memento: ${this.state}`)
+  }
 }
 
 // Caretaker
 class Caretaker {
-    private mementos: Memento[] = [];
-    private originator: Originator;
+  private readonly mementos: Memento[] = []
+  private readonly originator: Originator
 
-    constructor(originator: Originator) {
-        this.originator = originator;
-    }
+  constructor (originator: Originator) {
+    this.originator = originator
+  }
 
-    backup() {
-        console.log(`Caretaker: Saving Originator's state...`);
-        this.mementos.push(this.originator.save());
-    }
+  backup (): void {
+    console.log('Caretaker: Saving Originator\'s state...')
+    this.mementos.push(this.originator.save())
+  }
 
-    undo() {
-        if (!this.mementos.length) {
-            return;
-        }
-        const memento = this.mementos.pop();
-        console.log(`Caretaker: Restoring state to: ${memento?.getState()}`);
-        this.originator.restore(memento);
+  undo (): void {
+    if (this.mementos.length === 0) {
+      return
     }
+    const memento = this.mementos.pop()
+    if (memento != null) {
+      console.log(`Caretaker: Restoring state to: ${memento.getState()}`)
+      this.originator.restore(memento)
+    }
+  }
 }
 
 // Client code
-const originator = new Originator("State #0");
-const caretaker = new Caretaker(originator);
+const originator = new Originator('State #0')
+const caretaker = new Caretaker(originator)
 
-originator.setState('State #1');
-caretaker.backup();
+originator.setState('State #1')
+caretaker.backup()
 
-originator.setState('State #2');
-caretaker.backup();
+originator.setState('State #2')
+caretaker.backup()
 
-originator.setState('State #3');
-caretaker.backup();
+originator.setState('State #3')
+caretaker.backup()
 
-console.log('Client: Now, let\'s rollback!\n');
-caretaker.undo();
-caretaker.undo();
+console.log('Client: Now, let\'s rollback!\n')
+caretaker.undo()
+caretaker.undo()
