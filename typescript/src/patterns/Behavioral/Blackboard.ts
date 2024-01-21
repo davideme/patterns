@@ -30,21 +30,10 @@ const expert2: KnowledgeSource = (blackboard: IBlackboard): void => {
 }
 
 // Control
-class Controller {
-  private readonly blackboard: IBlackboard
-  private readonly experts: KnowledgeSource[]
-
-  constructor (blackboard: IBlackboard, experts: KnowledgeSource[]) {
-    this.blackboard = blackboard
-    this.experts = experts
-  }
-
-  execute (): void {
-    this.experts.forEach(expert => expert(this.blackboard))
-    console.log('Final Blackboard Data:', this.blackboard)
-  }
+const controller = (blackboard: IBlackboard, experts: KnowledgeSource[]): void => {
+  experts.forEach(expert => expert(blackboard))
+  console.log('Final Blackboard Data:', blackboard)
 }
 
 // Example usage
-const controller = new Controller(new Blackboard(), [expert1, expert2])
-controller.execute()
+controller(new Blackboard(), [expert1, expert2])
