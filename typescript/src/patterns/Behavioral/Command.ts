@@ -8,7 +8,7 @@ const simpleCommand = (payload: string): Command => {
   }
 }
 
-const complexCommand = (receiver: Receiver, a: string, b: string): Command => {
+const complexCommand = (receiver: IReceiver, a: string, b: string): Command => {
   return () => {
     console.log('Complex Command: Complex stuff should be done by a receiver object.')
     receiver.doSomething(a)
@@ -17,7 +17,12 @@ const complexCommand = (receiver: Receiver, a: string, b: string): Command => {
 }
 
 // Receiver
-class Receiver {
+interface IReceiver {
+  doSomething: (a: string) => void
+  doSomethingElse: (b: string) => void
+}
+
+class Receiver implements IReceiver {
   doSomething (a: string): void {
     console.log(`Receiver: Working on (${a}.)`)
   }
