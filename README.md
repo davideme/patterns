@@ -8,15 +8,17 @@ Imperative programming is a programming paradigm that uses statements to change 
 | ------------------------ | ---------------------------------- | ------------------------------------ | -------------------- |
 | [JavaScript][javascript] | Yes [^ecma-overview]               | Yes [^2]                             | Partial [^3]         |
 | Python                   | Yes [^4]                           | Yes [^5]                             | Yes [^6]             |
-| TypeScript               | Yes [^7]                           | Yes [^8]                             | Partial [^3]         |
+| [TypeScript][typescript] | Yes [^7]                           | Yes [^typescript-for-functional]     | Partial [^3]         |
 | Java                     | Yes [^9]                           | Yes [^10]                            | Yes [^11]            |
 | C#                       | Yes [^12]                          | Yes [^13]                            | Yes [^14]            |
 | C++                      | Yes [^15]                          | Yes [^16]                            | Yes [^17]            |
 | PHP                      | Yes [^18]                          | Yes [^19]                            | Partial [^3]         |
 | C                        | No [^20]                           | No [^21]                             | Partial [^3]         |
 | Go                       | Yes [^22]                          | Yes [^23]                            | Yes [^24]            |
+| Kotlin                   | Yes                                | Yes                                  |                      |
 
 [^ecma-overview]: [ECMAScript® 2023 Language Specification: Overview](https://262.ecma-international.org/14.0/#sec-overview)
+[^typescript-for-functional]https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes-func.html
 
 ## Typing Discipline
 
@@ -69,6 +71,7 @@ Footnotes and References:
 [^popular3]: [TIOBE Index](https://www.tiobe.com/tiobe-index/)
 
 [javascript]: ./javascript/README.md
+[typescript]: ./typescript/README.md
 
 [oop]: ./ObjectOriented.md
 [functional]: ./FunctionalProgramming.md
