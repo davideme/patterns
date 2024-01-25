@@ -8,7 +8,7 @@ Imperative programming is a programming paradigm that uses statements to change 
 | [Python][python]         | High                     | High                           |
 | [TypeScript][typescript] | High                     | High                           |
 | [Java][java]             | High                     | Moderate                       |
-| C#                       | High                     | High                           |
+| [C#][c-sharp]            | High                     | High                           |
 | C++                      | Moderate                 | Moderate                       |
 | PHP                      | Moderate                 | Moderate                       |
 | C                        | Low                      | Low                            |
@@ -198,6 +198,7 @@ Footnotes and References:
 [python]: ./python/README.md
 [typescript]: ./typescript/README.md
 [java]: ./java/README.md
+[c-sharp]: ./c-sharp/README.md
 
 [robustness]: #robustness
 [effectiveness]: #effectiveness
