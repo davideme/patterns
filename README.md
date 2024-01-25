@@ -7,7 +7,7 @@ Imperative programming is a programming paradigm that uses statements to change 
 | [JavaScript][javascript] | Moderate                 | High                           |
 | [Python][python]         | High                     | High                           |
 | [TypeScript][typescript] | High                     | High                           |
-| Java                     | High                     | Moderate                       |
+| [Java][java]             | High                     | Moderate                       |
 | C#                       | High                     | High                           |
 | C++                      | Moderate                 | Moderate                       |
 | PHP                      | Moderate                 | Moderate                       |
@@ -197,6 +197,7 @@ Footnotes and References:
 [javascript]: ./javascript/README.md
 [python]: ./python/README.md
 [typescript]: ./typescript/README.md
+[java]: ./java/README.md
 
 [robustness]: #robustness
 [effectiveness]: #effectiveness
