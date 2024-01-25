@@ -2,20 +2,21 @@
 
 Imperative programming is a programming paradigm that uses statements to change a program's state. This section categorizes popular[^popular1][^popular2][^popular3] imperative programming languages based on their support for Object-oriented programming (OOP), Functional programming, and Concurrent computing.
 
-| Language                 | Robustness | Effectiveness |
-| ------------------------ | ---------- | ------------- |
-| [JavaScript][javascript] | Moderate   | High          |
-| Python                   | High       | High          |
-| [TypeScript][typescript] | High       | High          |
-| Java                     | High       | Moderate      |
-| C#                       | High       | High          |
-| C++                      | Moderate   | Moderate      |
-| PHP                      | Moderate   | Moderate      |
-| C                        | Low        | Low           |
-| Go                       | High       | High          |
+| Language                 | [Robustness][robustness] | [Effectiveness][effectiveness] |
+| ------------------------ | ------------------------ | ------------------------------ |
+| [JavaScript][javascript] | Moderate                 | High                           |
+| Python                   | High                     | High                           |
+| [TypeScript][typescript] | High                     | High                           |
+| Java                     | High                     | Moderate                       |
+| C#                       | High                     | High                           |
+| C++                      | Moderate                 | Moderate                       |
+| PHP                      | Moderate                 | Moderate                       |
+| C                        | Low                      | Low                            |
+| Go                       | High                     | High                           |
 
+## Robustness
 
-## Robustness [^software_bug]
+See [^software_bug]
 
 ### Bug Prevention
 
@@ -114,7 +115,7 @@ Imperative programming is a programming paradigm that uses statements to change 
 
 [^software_bug]: https://en.wikipedia.org/wiki/Software_bug
 
-## Expressiveness
+## Effectiveness
 
 ### Flexibility and Generality
 The ability to use the language in a wide variety of programming paradigms and domains. A highly expressive language can elegantly solve problems across different areas without needing to resort to awkward or verbose constructs.
@@ -195,6 +196,9 @@ Footnotes and References:
 
 [javascript]: ./javascript/README.md
 [typescript]: ./typescript/README.md
+[robustness]: #robustness
+[effectiveness]: #effectiveness
+
 
 [oop]: ./ObjectOriented.md
 [functional]: ./FunctionalProgramming.md
