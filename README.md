@@ -15,6 +15,8 @@ This section categorizes popular[^popular1][^popular2][^popular3] imperative pro
 | C                        | Low                      | Low                            |
 | [Go][go]                 | High                     | High                           |
 
+In contrast, declarative programming, typified by languages like HTML, CSS, and SQL, follows a different paradigm that expresses computational logic without detailing control flow. However, this analysis will not cover declarative languages, as they are specialized and diverse in their objectives, with no two languages serving identical purposes.
+
 ## Robustness
 
 The [robustness][^software_bug] of a programming language can be influenced by its approach to error prevention and handling.
@@ -178,15 +180,6 @@ Specific constructs provided by the language that contribute to its expressivene
 
 [^java-interface-default]: https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html
 [^C#-interface-default]: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-8.0/default-interface-methods
-
-
-# Declarative Programming Languages
-
-Declarative programming is a paradigm that expresses the logic of a computation without describing its control flow. Common examples of declarative programming languages include HTML, CSS, and SQL, as noted in various technical references.
-
-- HTML [^61]
-- CSS [^62]
-- SQL [^63]
 
 ---
 
