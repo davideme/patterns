@@ -1,6 +1,7 @@
-# Popular Imperative Programming Languages
+# Compare Popular Imperative Programming Languages
 
-Imperative programming is a programming paradigm that uses statements to change a program's state. This section categorizes popular[^popular1][^popular2][^popular3] imperative programming languages based on their support for Object-oriented programming (OOP), Functional programming, and Concurrent computing.
+Imperative programming, a paradigm that utilizes statements to alter a program's state, encompasses various popular languages.
+This section categorizes popular[^popular1][^popular2][^popular3] imperative programming languages, comparing their robustness(bug preventation) and effectiveness(facilitating development).
 
 | Language                 | [Robustness][robustness] | [Effectiveness][effectiveness] |
 | ------------------------ | ------------------------ | ------------------------------ |
@@ -16,11 +17,12 @@ Imperative programming is a programming paradigm that uses statements to change 
 
 ## Robustness
 
-See [^software_bug]
+The [robustness][^software_bug] of a programming language can be influenced by its approach to error prevention and handling.
 
 ### Bug Prevention
 
-#### Typing System and Avoid Typographical Errors
+#### Typing System and Typographical Error Prevention
+
 - 👍 **Static Typing** enforces type consistency at compile time. This system helps catch typographical errors early in the development cycle by ensuring that variables and functions adhere to declared types, leading to a more robust and error-resistant codebase. The compiler performs extensive checks for syntax, type correctness, and other potential issues, significantly reducing the risk of typographical errors causing runtime errors.
 - 👎 **Dynamic Typing** determines types at runtime, which provides flexibility in coding but increases the risk of typographical errors. These languages rely on runtime checks, which means that errors, including those from typographical mistakes, are detected when the code is executed. This can lead to runtime exceptions if variable names or functions are incorrectly spelled.
 
@@ -37,6 +39,8 @@ See [^software_bug]
 | Go         | Static        |
 
 #### Testing
+Discusses approaches like unit testing and test-driven development (TDD).
+
 
 ##### Unit testing
 
@@ -44,6 +48,7 @@ See [^software_bug]
 
 #### Programming language support
 
+Presents a comparative overview of language features such as strong typing, memory safety, bounds checking, null safety, and concurrency primitives.
 
 | Language   | Strong Typing | Memory Safety | Bounds Checking         | Null Safety | Concurrency Primitives |
 | ---------- | ------------- | ------------- | ----------------------- | ----------- | ---------------------- |
@@ -56,7 +61,7 @@ See [^software_bug]
 | PHP        | No            | Yes           | Runtime                 | No          | Yes                    |
 | C          | Yes           | No            | Not standardly enforced | No          | No                     |
 | Go         | Yes           | Yes           | Runtime                 | No          | Yes                    |
-  
+
 - **Strong Typing:**
  - Prevents implicit conversions between incompatible types, reducing runtime errors due to unexpected type coercions.
 
@@ -73,13 +78,12 @@ See [^software_bug]
 - **Concurrency Primitives:**
   - "Limited" in JavaScript and TypeScript refers to the event loop model and async/await syntax, which are not traditional concurrency models but can handle asynchronous operations. Python, Java, C#, PHP, and Go offer more explicit concurrency support through various constructs like threads, async/await, goroutines, etc.
 
-
-
 ### Bug Types
 
 #### Resourcing
 
 ##### Uninitialized Variables
+Presents how each language handles potential resource management issues.
 
 | Language   | Uninitialized Variables |
 | ---------- | ----------------------- |
@@ -117,6 +121,8 @@ See [^software_bug]
 
 ## Effectiveness
 
+Evaluates languages based on their versatility in various programming paradigms.
+
 ### Flexibility and Generality
 The ability to use the language in a wide variety of programming paradigms and domains. A highly expressive language can elegantly solve problems across different areas without needing to resort to awkward or verbose constructs.
 
@@ -144,8 +150,6 @@ Specific constructs provided by the language that contribute to its expressivene
 
 #### Typing Discipline
 
-The typing discipline of a programming language pertains to the rules used by a compiler to associate a type with a value. The following table compares the typing disciplines of various imperative programming languages, based on technical documentation and scholarly articles.
-
 | Language/Typing | Duck/Nominative/Structural      | Manifest/Inferred           |
 | --------------- | ------------------------------- | --------------------------- |
 | JavaScript      | Duck [^27]                      | Inferred [^28]              |
@@ -157,8 +161,6 @@ The typing discipline of a programming language pertains to the rules used by a 
 | PHP             | Nominative [^51]                | Inferred [^52]              |
 | C               | Nominative [^55]                | Manifest [^56]              |
 | Go              | Nominative and Structural [^59] | Inferred [^60]              |
-
-
 
 #### Features
 
@@ -178,7 +180,7 @@ The typing discipline of a programming language pertains to the rules used by a 
 [^C#-interface-default]: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-8.0/default-interface-methods
 
 
-# Popular Declarative Programming Languages
+# Declarative Programming Languages
 
 Declarative programming is a paradigm that expresses the logic of a computation without describing its control flow. Common examples of declarative programming languages include HTML, CSS, and SQL, as noted in various technical references.
 
