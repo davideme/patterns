@@ -13,7 +13,7 @@
   "devDependencies": {
     "ts-standard": "^12.0.2",
     "typescript": "^5.1.6",
-    "vite": "^5.0.8",
+    "vite": "^5.0.12",
     "vitest": "^1.2.0"
   },
   "ts-standard": {
