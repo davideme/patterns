@@ -8,17 +8,17 @@
 
 - 👍 **Static Typing** enforces type consistency at compile time. This system helps catch typographical errors early in the development cycle by ensuring that variables and functions adhere to declared types, leading to a more robust and error-resistant codebase. The compiler performs extensive checks for syntax, type correctness, and other potential issues, significantly reducing the risk of typographical errors causing runtime errors.
 
-| Language   | Typing System |
-| ---------- | ------------- |
-| TypeScript | Static        |
+| Typing System |
+| ------------- |
+| Static        |
 
 #### Programming language support
 
 Presents a comparative overview of language features such as strong typing, memory safety, bounds checking, null safety, and concurrency primitives.
 
-| Language   | Strong Typing | Memory Safety | Bounds Checking | Null Safety | Concurrency Primitives |
-| ---------- | ------------- | ------------- | --------------- | ----------- | ---------------------- |
-| TypeScript | Yes           | Yes           | Runtime         | Yes**       | Limited                |
+| Strong Typing | Memory Safety | Bounds Checking | Null Safety | Concurrency Primitives |
+| ------------- | ------------- | --------------- | ----------- | ---------------------- |
+| Yes           | Yes           | Runtime         | Yes**       | Limited                |
 
 - **Strong Typing:**
   - Prevents implicit conversions between incompatible types, reducing runtime errors due to unexpected type coercions.
@@ -39,9 +39,9 @@ Presents a comparative overview of language features such as strong typing, memo
 
 ##### Uninitialized Variables
 
-| Language   | Uninitialized Variables |
-| ---------- | ----------------------- |
-| TypeScript | Forbidden               |
+| Uninitialized Variables |
+| ----------------------- |
+| Forbidden               |
 
   - **Languages Marked "Forbidden"**: Variables are either automatically initialized to a default value or the language requires explicit initialization at the point of declaration, preventing the use of uninitialized variables.
 
@@ -55,23 +55,31 @@ Presents a comparative overview of language features such as strong typing, memo
 
 ### Flexibility and Generality
 
-| Language/Paradigm | [Object-oriented programming][oop] | [Functional programming][functional] | Concurrent computing |
-| ----------------- | ---------------------------------- | ------------------------------------ | -------------------- |
-| TypeScript        | Yes [^7]                           | Yes [^typescript-for-functional]     | Partial [^3]         |
+| [Object-oriented programming][oop] | [Functional programming][functional] | Concurrent computing |
+| ---------------------------------- | ------------------------------------ | -------------------- |
+| Yes [^7]                           | Yes [^typescript-for-functional]     | Partial [^3]         |
 
 ### Language Features
 
 #### Typing Discipline
 
-| Language/Typing | Duck/Nominative/Structural | Manifest/Inferred           |
-| --------------- | -------------------------- | --------------------------- |
-| TypeScript      | Duck and Structural [^35]  | Manifest and Inferred [^36] |
+| Duck/Nominative/Structural | Manifest/Inferred           |
+| -------------------------- | --------------------------- |
+| Duck and Structural [^35]  | Manifest and Inferred [^36] |
 
 #### Features
 
-| Language   | Error Handling | Collection Manipulation | Composition with delegation |
-| ---------- | -------------- | ----------------------- | --------------------------- |
-| TypeScript | Exception      | Yes                     | mixins                      |
+| Error Handling | List comprehension | Composition with delegation |
+| -------------- | ------------------ | --------------------------- |
+| Exception      | Yes                | mixins                      |
+
+##### List comprehension
+
+```typescript
+const ns = Array.from({length: 100}, (_, i) => i)
+                .filter(x => x * x > 3)
+                .map(x => x * 2);
+```
 
 ---
 
