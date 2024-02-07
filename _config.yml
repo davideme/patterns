@@ -7,6 +7,6 @@ gist:
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
-remote_theme: pages-themes/slate@v0.2.0
+remote_theme: cotes2020/jekyll-theme-chirpy@v6.4.2
 plugins:
 - jekyll-remote-theme
