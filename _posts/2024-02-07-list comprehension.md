@@ -1,5 +1,4 @@
 ---
-layout: post
 author: davideme
 ---
 ### Expressive Collection Manipulation in Poll Application Development: Insights from Python, JavaScript, and C#
