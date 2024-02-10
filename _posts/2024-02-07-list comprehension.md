@@ -6,9 +6,9 @@ header:
   overlay_image: /assets/images/list-comprehension-abstract.webp
   overlay_filter: 0.5
 ---
-### Expressive Collection Manipulation in Poll Application Development: Insights from Python, JavaScript, and C#
+# Expressive Collection Manipulation: Insights from Python, JavaScript, and C#
 
-In the realm of software engineering, the elegance of code lies not only in its ability to perform tasks but also in its expressiveness and simplicity. Martin Fowler, a luminary in the field, often emphasizes the importance of code clarity and the principle of revealing intentions through code. Bearing this in mind, let's delve into how list comprehension and its analogous constructs in Python, JavaScript (augmented by TypeScript), and C# can dramatically improve the expressiveness of data manipulation, particularly in the development of REST APIs for a Poll Application.
+In the realm of software engineering, the elegance of code lies not only in its ability to perform tasks but also in its expressiveness and simplicity. Martin Fowler[^Fowler] and Kent Beck[^Beck], often emphasizes the importance of code clarity and the principle of revealing intentions through code. Bearing this in mind, let's delve into how list comprehension and its analogous constructs in Python, JavaScript (augmented by TypeScript), and C# can dramatically improve the expressiveness of data manipulation, particularly in the development of REST APIs for a Poll Application.
 
 #### The Essence of Poll Results Processing
 
@@ -174,3 +174,11 @@ This comparison reveals the transformative power of these modern constructs:
 - **Expressiveness:** These constructs enable developers to express complex operations in a concise and readable manner, which is closer to natural language and thus more aligned with Martin Fowler's principles of code clarity and intention revelation.
 
 In summary, the modern constructs of list comprehension, functional programming methods, and LINQ not only enhance the expressiveness of code but also its maintainability and readability. They represent a significant step forward in writing clean, efficient, and intention-revealing code, embodying the best practices advocated by thought leaders like Martin Fowler in software development.
+
+---
+
+**Footnote:**
+
+- [^Beck]Beck, Kent. *Extreme Programming Explained: Embrace Change, First Edition*. Addison-Wesley, 1999.
+
+- [^Fowler]Fowler, Martin. "[Design Dead?](https://www.martinfowler.com/articles/designDead.html)" *MartinFowler.com*, Accessed [May 2004].
