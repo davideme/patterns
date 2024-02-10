@@ -179,6 +179,6 @@ In summary, the modern constructs of list comprehension, functional programming 
 
 **Footnote:**
 
-- [^Beck]Beck, Kent. *Extreme Programming Explained: Embrace Change, First Edition*. Addison-Wesley, 1999.
+- [^Beck]: Beck, Kent. *Extreme Programming Explained: Embrace Change, First Edition*. Addison-Wesley, 1999.
 
-- [^Fowler]Fowler, Martin. "[Design Dead?](https://www.martinfowler.com/articles/designDead.html)" *MartinFowler.com*, Accessed [May 2004].
+- [^Fowler]: Fowler, Martin. "[Design Dead?](https://www.martinfowler.com/articles/designDead.html)" *MartinFowler.com*, Accessed [May 2004].
