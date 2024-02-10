@@ -1,7 +1,7 @@
 ---
 layout: posts
-title: "Transformative power of list comprehension"
-excerpt: "Delves into how modern programming constructs significantly improve code readability, maintainability, and expressiveness, comparing traditional iteration methods to showcase their efficiency."
+title: "Expressive Collection Manipulation"
+excerpt: "Delves into how list comprehension, functional programming methods, and LINQ significantly improve code readability, maintainability, and expressiveness, comparing traditional iteration methods to showcase their efficiency."
 tags: 
  - effectiveness
 header:
