@@ -8,9 +8,9 @@ header:
 ---
 # Expressive Collection Manipulation: Insights from Python, JavaScript, and C#
 
-In the realm of software engineering, the elegance of code lies not only in its ability to perform tasks but also in its expressiveness and simplicity. Martin Fowler[^Fowler] and Kent Beck[^Beck], often emphasizes the importance of code clarity and the principle of revealing intentions through code. Bearing this in mind, let's delve into how list comprehension and its analogous constructs in Python, JavaScript (augmented by TypeScript), and C# can dramatically improve the expressiveness of data manipulation, particularly in the development of REST APIs for a Poll Application.
+In the realm of software engineering, the elegance of code lies not only in its ability to perform tasks but also in its expressiveness and simplicity. Martin Fowler[^Fowler] and Kent Beck[^Beck], often emphasizes the importance of code clarity and the principle of revealing intentions through code. Bearing this in mind, let's delve into how list comprehension and its analogous constructs in Python, JavaScript/TypeScript, and C# can dramatically improve the expressiveness of data manipulation, as an example we will use the development of REST APIs.
 
-#### The Essence of Poll Results Processing
+## The Essence of Poll Results Processing in a Poll App
 
 Consider the task at hand: processing poll results from a collection of votes. Each vote is a record marked by a poll identifier, the option chosen, and the tally of votes for that option. Our objective is straightforward—extract and format the results for a specified poll, focusing on the option and its vote count. This operation, mundane yet pivotal, serves as an exemplary case to explore the expressive power vested in modern programming languages.
 
