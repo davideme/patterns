@@ -4,7 +4,7 @@ title: "Transformative power of list comprehension"
 excerpt: "Delves into how modern programming constructs significantly improve code readability, maintainability, and expressiveness, comparing traditional iteration methods to showcase their efficiency."
 header:
   overlay_image: /assets/images/list-comprehension-abstract.webp
-  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  overlay_filter: 0.5
 ---
 ### Expressive Collection Manipulation in Poll Application Development: Insights from Python, JavaScript, and C#
 

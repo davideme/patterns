@@ -11,3 +11,18 @@ remote_theme: mmistakes/minimal-mistakes@4.24.0
 plugins:
 - jekyll-remote-theme
 - jekyll-include-cache
+
+# Site Settings
+locale                   : "en-US"
+name                     : &name "Davide Mendolia" # &name is a YAML anchor which can be *referenced later
+
+author:
+  name             : *name # *name is a YAML reference pointing to the &anchor earlier
+  bio              : "Software Engineer, Ex-CEO/CTO of Karumi, Dad."
+  links:
+    - label: "LinkedIn"
+      icon: "fas fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/dmendolia/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/davideme"
