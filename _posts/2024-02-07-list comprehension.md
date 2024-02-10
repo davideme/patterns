@@ -1,4 +1,5 @@
 ---
+layout: posts
 title: "Enhancing Code Expressiveness with Modern Programming Constructs"
 excerpt: "Explore the transformative power of list comprehension, functional programming methods, and LINQ across Python, JavaScript/TypeScript, and C#. This post delves into how these modern programming constructs significantly improve code readability, maintainability, and expressiveness, comparing traditional iteration methods to showcase their efficiency. Without focusing on specific applications, we illustrate these concepts through practical examples, revealing the stark contrast in coding paradigms and their impact on software development."
 header:
