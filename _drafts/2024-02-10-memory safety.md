@@ -121,3 +121,13 @@ Each of these vulnerabilities requires a nuanced approach to exploitation, and d
 C and C++ require vigilance to avoid memory safety issues, whereas Python and Java offer safer memory management through abstraction. Rust emerges as a language that does not compromise on performance or low-level control while providing strong safety guarantees.
 
 The balance between performance, control, and safety is pivotal. As the software industry progresses, adopting safer programming practices and languages is crucial for developing secure and reliable software. Understanding the unique features and potential vulnerabilities of each language enables developers to navigate the complexities of memory safety effectively.
+
+**Footnote:**
+
+https://msrc.microsoft.com/blog/2019/07/we-need-a-safer-systems-programming-language/
+https://security.googleblog.com/2019/05/queue-hardening-enhancements.html
+
+https://msrc.microsoft.com/blog/2019/07/why-rust-for-safe-systems-programming/
+https://youtu.be/8T6ClX-y2AE?t=3100
+https://aws.amazon.com/fr/blogs/opensource/sustainability-with-rust/
+https://www.theregister.com/2022/10/05/rust_kernel_pull_request_pulled/
