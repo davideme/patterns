@@ -1,3 +1,13 @@
+---
+layout: posts
+title: "Securing the Code: Navigating Memory Safety"
+excerpt: "Explore the crucial realm of memory safety across C, C++, Python, Java, and Rust. This deep dive unravels the mechanisms and vulnerabilities associated with memory management in software development."
+tags: 
+ - robustness
+header:
+  overlay_image: /assets/images/memory-safety-abstract.webp
+  overlay_filter: 0.5
+---
 # Memory Safety: A Comparative Analysis of C/C++, Python, Java, and Rust
 
 In the realm of software development, memory safety is crucial for ensuring the security and reliability of applications. This article explores the landscape of memory safety across C, C++, Python, Java, and Rust. Drawing on insights from Google and Microsoft, we delve into bounds checking, raw pointer arithmetic, and the implications of these features for memory safety.
