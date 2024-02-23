@@ -10,7 +10,7 @@ header:
 ---
 # Memory Safety: A Comparative Analysis of C/C++, Python, Java, and Rust
 
-In the realm of software development, memory safety is crucial for ensuring the security and reliability of applications. This article explores the landscape of memory safety across C, C++, Python, Java, and Rust. Drawing on insights from Google and Microsoft, we delve into bounds checking, raw pointer arithmetic, and the implications of these features for memory safety.
+In the realm of software development, memory safety is crucial for ensuring the security and reliability of applications. This article explores the landscape of memory safety across C, C++, Python, Java, and Rust.
 
 ## The Landscape of Memory Safety
 
