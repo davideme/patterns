@@ -35,7 +35,7 @@ defaults:
       related: true
 
 analytics:
-  provider               : "google" # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          : G-JEKVHD3ZG8
     anonymize_ip         : true # true, false (default)
