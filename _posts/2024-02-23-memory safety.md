@@ -40,12 +40,16 @@ Trying to access memory beyond the allocated buffer or array, cause an undefined
 
 ```c
 char buffer[10] = "123";
-char out_of_bounds_char = buffer[10]; // Index 10 is out-of-bounds for this buffer
-printf("Out-of-Bounds: %c\n", out_of_bounds_char); // Undefined behavior: buffer over-read
+// Index 10 is out-of-bounds for this buffer
+char out_of_bounds_char = buffer[10]; 
+// Undefined behavior: buffer over-read
+printf("Out-of-Bounds: %c\n", out_of_bounds_char); 
 
 int array[5] = {1, 2, 3, 4, 5};
-int out_of_bounds_value = array[5]; // Index 5 is out-of-bounds for this array
-printf("Out-of-Bounds: %d\n", out_of_bounds_value); // Undefined behavior: array over-read
+// Index 5 is out-of-bounds for this array
+int out_of_bounds_value = array[5];
+// Undefined behavior: array over-read
+printf("Out-of-Bounds: %d\n", out_of_bounds_value);
 ```
 
 
@@ -54,12 +58,14 @@ Both languages prevent buffer over-reads through automatic bounds checking, miti
 
 ```java
 String buffer = "123";
-// Attempt to access an index that is out-of-bounds will throw StringIndexOutOfBoundsException
+// Attempt to access an index that is out-of-bounds 
+// This will throw StringIndexOutOfBoundsException 
 char outOfBoundsChar = buffer.charAt(10);
 System.out.println("Out-of-Bounds: " + outOfBoundsChar);
 
 int[] array = {1, 2, 3, 4, 5};
-// Attempt to access an index that is out-of-bounds will throw ArrayIndexOutOfBoundsException
+// Attempt to access an index that is out-of-bounds
+// This will throw ArrayIndexOutOfBoundsException
 int outOfBoundsValue = array[5];
 System.out.println("Out-of-Bounds: " + outOfBoundsValue);
 ```
@@ -76,7 +82,8 @@ match buffer.chars().nth(10) {
 }
 
 let array = vec![1, 2, 3, 4, 5];
-// Attempt to access an index that is out-of-bounds will cause a panic at runtime
+// Attempt to access an index that is out-of-bounds 
+// This will cause a panic at runtime
 let out_of_bounds_value = array[5];
 println!("Out-of-Bounds: {}", out_of_bounds_value);
 
@@ -100,7 +107,8 @@ int buffer[5]; // Buffer with space for 5 integers
 
 // Attempting to write beyond the buffer's bounds
 for (int i = 0; i < 10; i++) {
-	buffer[i] = i; // This will cause a buffer overflow when i >= 5
+	// This will cause a buffer overflow when i >= 5
+	buffer[i] = i;
 }
 ```
 
@@ -110,13 +118,10 @@ Both languages prevent buffer overflows and over-reads through automatic bounds 
 ```java
 int[] buffer = new int[5]; // Buffer with space for 5 integers
 
-try {
-	// Attempting to write beyond the buffer's bounds
-	for (int i = 0; i < 10; i++) {
-		buffer[i] = i; // This will throw an ArrayIndexOutOfBoundsException when i >= 5
-	}
-} catch (ArrayIndexOutOfBoundsException e) {
-	System.out.println("Attempted to write out of bounds");
+// Attempting to write beyond the buffer's bounds
+for (int i = 0; i < 10; i++) {
+	// This will throw an ArrayIndexOutOfBoundsException when i >= 5
+	buffer[i] = i; 
 }
 ```
 
@@ -155,20 +160,18 @@ Python and Java:
 In this Java, the array is declared within a block, limiting its scope to that block. Once the block is exited, `v` is no longer accessible, and trying to use it outside the block will result in a compile-time error.
 
 ```java
-public class ScopeExample {
-    public static void main(String[] args) {
-        {
-            // Initialize the array inside a scoped block
-            int[] v = {1, 2, 3};
-            // `v` can be used here
-            for (int i : v) {
-                System.out.println(i);
-            }
-        } // `v` goes out of scope here
+public static void main(String[] args) {
+	{
+		// Initialize the array inside a scoped block
+		int[] v = {1, 2, 3};
+		// `v` can be used here
+		for (int i : v) {
+			System.out.println(i);
+		}
+	} // `v` goes out of scope here
 
-        // Any attempt to use `v` beyond this point would result in a compile-time error.
-        // System.out.println(Arrays.toString(v)); // Uncommenting this line would cause a compile-time error
-    }
+	// Any attempt to use `v` beyond this point would result in a compile-time error.
+	// System.out.println(Arrays.toString(v)); // Uncommenting this line would cause a compile-time error
 }
 ```
 
