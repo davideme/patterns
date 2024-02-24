@@ -24,7 +24,7 @@ C and C++ offer unparalleled performance and control over system resources, larg
 Python and Java prioritize memory safety by abstracting low-level memory management details, such as pointer arithmetic, in favor of high-level data structures and automatic memory management. Both languages enforce array bounds checking, significantly reducing the risk of buffer overflow vulnerabilities.
 ### Rust: Balancing Low-Level Control with Safety
 
-Rust represents a paradigm shift in memory safety, offering both low-level control and robust safety guarantees without a garbage collector. Rust's ownership model, coupled with borrowing rules, prevents data races, use after free, and double free errors at compile time. Its adoption by Microsoft[^rust_systems_programming][^gdi_win32k_rust] and for contributions to the Linux kernel[^linux6.1_rust] underscores Rust's efficacy in safety-critical and performance-critical domains. Furthermore, Rust's emphasis on sustainability and efficient resource use is highlighted in AWS's exploration of its potential for green computing[^aws_rust]
+Rust represents a paradigm shift in memory safety, offering both low-level control and robust safety guarantees without a garbage collector. Rust's ownership model, coupled with borrowing rules, prevents data races, use after free, and double free errors at compile time. Its adoption by Microsoft[^rust_systems_programming][^gdi_win32k_rust] and for contributions to the Linux kernel[^linux6-1_rust] underscores Rust's efficacy in safety-critical and performance-critical domains. Furthermore, Rust's emphasis on sustainability and efficient resource use is highlighted in AWS's exploration of its potential for green computing[^aws_rust]
 
 ## Understanding Memory Safety Issues
 
@@ -106,7 +106,7 @@ for (int i = 0; i < 10; i++) {
 
 
 **Python and Java**:
-Both languages prevent buffer overflows and over-reads through automatic bounds checking, mitigating the risk of such vulnerabilities. %%put an example here%%
+Both languages prevent buffer overflows and over-reads through automatic bounds checking, mitigating the risk of such vulnerabilities.
 ```java
 int[] buffer = new int[5]; // Buffer with space for 5 integers
 
@@ -201,4 +201,4 @@ The balance between performance, control, and safety is pivotal. As the software
 [^rust_systems_programming]: https://msrc.microsoft.com/blog/2019/07/why-rust-for-safe-systems-programming/
 [^gdi_win32k_rust]:https://youtu.be/8T6ClX-y2AE?t=3100
 [^aws_rust]: https://aws.amazon.com/fr/blogs/opensource/sustainability-with-rust/
-[^linux6.1_rust]:https://www.theregister.com/2022/10/05/rust_kernel_pull_request_pulled/
+[^linux6-1_rust]:https://www.theregister.com/2022/10/05/rust_kernel_pull_request_pulled/
